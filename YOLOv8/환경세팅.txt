@@ -1,0 +1,12 @@
+conda create -n auto_label python=3.8
+conda activate auto_label
+
+conda install pytorch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 pytorch-cuda=11.7 -c pytorch -c nvidia
+or
+pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2
+
+# charset-normalizer 이상한 오류가 떠서 아래 코드 실행
+# conda install -c conda-forge charset-normalizer
+
+
+pip install pillow numpy tqdm ultralytics
